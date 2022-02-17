@@ -9,7 +9,9 @@ class Product extends Model {}
 // set up fields and rules for Product model
 Product.init(
   {
-    // define columns
+    // id (integer, doesnt allow null, primary key, auto- incrememnt)
+    // product_name (string, doesnt allow null, validates value is decimal)
+    // category_id (integer, references category model's id)
   },
   {
     sequelize,
